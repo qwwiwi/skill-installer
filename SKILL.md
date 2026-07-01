@@ -41,9 +41,31 @@ bash scripts/install.sh https://github.com/user/repo --name my-instagram
 # Install from a subdirectory (monorepo with multiple skills)
 bash scripts/install.sh https://github.com/user/repo --path skills/weather
 
+# Install TweetClaw's packaged OpenClaw skill from its repo subdirectory
+bash scripts/install.sh https://github.com/Xquik-dev/tweetclaw --path skills/tweetclaw --inspect
+bash scripts/install.sh https://github.com/Xquik-dev/tweetclaw --path skills/tweetclaw --name tweetclaw
+
 # Update existing skill (overwrites)
 bash scripts/install.sh https://github.com/qwwiwi/instagram-hikerapi --force
 ```
+
+### OpenClaw plugin companion skills
+
+Some OpenClaw plugins keep their reusable skill instructions in a repository
+subdirectory instead of the repo root. Use `--path` to inspect the skill first,
+then install it by name after reviewing the `SKILL.md` and supporting files.
+
+TweetClaw is a practical example because the repository ships the OpenClaw
+plugin and a packaged skill together:
+
+```bash
+bash scripts/install.sh https://github.com/Xquik-dev/tweetclaw --path skills/tweetclaw --inspect
+bash scripts/install.sh https://github.com/Xquik-dev/tweetclaw --path skills/tweetclaw --name tweetclaw
+```
+
+For social-account skills, inspect before installing and confirm that write
+actions such as posting, replying, following, deleting, or uploading media stay
+behind explicit user approval.
 
 ## Read / inspect a repo without installing
 
