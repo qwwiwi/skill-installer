@@ -33,7 +33,7 @@ What it does:
 
 ```bash
 # Install by GitHub URL
-bash scripts/install.sh https://github.com/qwwiwi/instagram-superpowers --path skills/instagram-loore
+bash scripts/install.sh https://github.com/qwwiwi/instagram-superpowers --path instagram-loore
 
 # Install with custom name
 bash scripts/install.sh https://github.com/user/repo --name my-instagram
@@ -42,7 +42,7 @@ bash scripts/install.sh https://github.com/user/repo --name my-instagram
 bash scripts/install.sh https://github.com/user/repo --path skills/weather
 
 # Update existing skill (overwrites)
-bash scripts/install.sh https://github.com/qwwiwi/instagram-superpowers --path skills/instagram-loore --force
+bash scripts/install.sh https://github.com/qwwiwi/instagram-superpowers --path instagram-loore --force
 ```
 
 ## Read / inspect a repo without installing

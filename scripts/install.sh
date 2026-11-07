@@ -28,7 +28,7 @@ Install Options:
   --skills-dir <dir>      Skills directory (default: $DEFAULT_SKILLS_DIR)
 
 Examples:
-  $SCRIPT_NAME https://github.com/qwwiwi/instagram-superpowers --path skills/instagram-loore
+  $SCRIPT_NAME https://github.com/qwwiwi/instagram-superpowers --path instagram-loore
   $SCRIPT_NAME https://github.com/user/repo --name my-skill
   $SCRIPT_NAME https://github.com/user/monorepo --path skills/weather
   $SCRIPT_NAME https://github.com/user/repo --inspect
